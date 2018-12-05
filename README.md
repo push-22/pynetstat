@@ -29,3 +29,6 @@ pynetstat estab
 
 will show all the addresses/ports that have established connections
 
+pynetstat list -exe:adb
+
+will displayany address/port that is in the listening state for the adb.exe process
