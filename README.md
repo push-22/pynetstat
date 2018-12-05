@@ -3,7 +3,8 @@ wrapper around the windows netstat command
 
 *************** WINDOWS ONLY ***************
 
-a python wrapper around the output of netstat
+a python wrapper around the output of netstat, it will apply a user supplied regex expression to the ouput of netstat
+no checking of the expression is done (garbage in garbage out).
 
 Installation
 ============
@@ -23,7 +24,7 @@ will return basic usage info
 
 pynetstat -exe:adb.exe
 
-This should display the addresses/ports in use by the adb.exe process (if adb is running)
+This will display the addresses/ports in use by the adb.exe process, if adb is running, else nothing
 
 pynetstat estab
 
@@ -31,4 +32,4 @@ will show all the addresses/ports that have established connections
 
 pynetstat list -exe:adb
 
-will displayany address/port that is in the listening state for the adb.exe process
+will display any address/port that is in the listening state for the adb.exe process
