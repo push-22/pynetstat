@@ -18,11 +18,14 @@ usage
 from a command prompt type something like:
 
 pynetstat
+
 will return basic usage info
 
-pynetstat -exe:adb.exe 
+pynetstat -exe:adb.exe
+
 This should display the addresses/ports in use by the adb.exe process (if adb is running)
 
-pynetstat estab 
+pynetstat estab
+
 will show all the addresses/ports that have established connections
 
